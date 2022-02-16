@@ -30,7 +30,6 @@ namespace DropTop
         /// </summary>
         private void InitializeComponent()
         {
-            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.generalTabPage = new System.Windows.Forms.TabPage();
             this.folderListBox = new System.Windows.Forms.ListBox();
@@ -54,7 +53,7 @@ namespace DropTop
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(501, 396);
+            this.tabControl1.Size = new System.Drawing.Size(429, 343);
             this.tabControl1.TabIndex = 0;
             // 
             // generalTabPage
@@ -63,10 +62,10 @@ namespace DropTop
             this.generalTabPage.Controls.Add(this.removeButton);
             this.generalTabPage.Controls.Add(this.addButton);
             this.generalTabPage.Controls.Add(this.label1);
-            this.generalTabPage.Location = new System.Drawing.Point(4, 24);
+            this.generalTabPage.Location = new System.Drawing.Point(4, 22);
             this.generalTabPage.Name = "generalTabPage";
             this.generalTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.generalTabPage.Size = new System.Drawing.Size(493, 368);
+            this.generalTabPage.Size = new System.Drawing.Size(421, 317);
             this.generalTabPage.TabIndex = 0;
             this.generalTabPage.Text = "General";
             this.generalTabPage.UseVisualStyleBackColor = true;
@@ -74,17 +73,16 @@ namespace DropTop
             // folderListBox
             // 
             this.folderListBox.FormattingEnabled = true;
-            this.folderListBox.ItemHeight = 15;
-            this.folderListBox.Location = new System.Drawing.Point(8, 21);
+            this.folderListBox.Location = new System.Drawing.Point(7, 18);
             this.folderListBox.Name = "folderListBox";
-            this.folderListBox.Size = new System.Drawing.Size(477, 94);
+            this.folderListBox.Size = new System.Drawing.Size(409, 82);
             this.folderListBox.TabIndex = 4;
             // 
             // removeButton
             // 
-            this.removeButton.Location = new System.Drawing.Point(89, 120);
+            this.removeButton.Location = new System.Drawing.Point(76, 104);
             this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(75, 23);
+            this.removeButton.Size = new System.Drawing.Size(64, 20);
             this.removeButton.TabIndex = 3;
             this.removeButton.Text = "Remove";
             this.removeButton.UseVisualStyleBackColor = true;
@@ -92,9 +90,9 @@ namespace DropTop
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(8, 120);
+            this.addButton.Location = new System.Drawing.Point(7, 104);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.Size = new System.Drawing.Size(64, 20);
             this.addButton.TabIndex = 2;
             this.addButton.Text = "Add...";
             this.addButton.UseVisualStyleBackColor = true;
@@ -103,45 +101,45 @@ namespace DropTop
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 3);
+            this.label1.Location = new System.Drawing.Point(7, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 15);
+            this.label1.Size = new System.Drawing.Size(80, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Folder to watch";
             // 
             // appearanceTabPage
             // 
-            this.appearanceTabPage.Location = new System.Drawing.Point(4, 24);
+            this.appearanceTabPage.Location = new System.Drawing.Point(4, 22);
             this.appearanceTabPage.Name = "appearanceTabPage";
             this.appearanceTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.appearanceTabPage.Size = new System.Drawing.Size(493, 368);
+            this.appearanceTabPage.Size = new System.Drawing.Size(421, 317);
             this.appearanceTabPage.TabIndex = 1;
             this.appearanceTabPage.Text = "Appearance";
             this.appearanceTabPage.UseVisualStyleBackColor = true;
             // 
             // updateTabPage
             // 
-            this.updateTabPage.Location = new System.Drawing.Point(4, 24);
+            this.updateTabPage.Location = new System.Drawing.Point(4, 22);
             this.updateTabPage.Name = "updateTabPage";
-            this.updateTabPage.Size = new System.Drawing.Size(493, 368);
+            this.updateTabPage.Size = new System.Drawing.Size(421, 317);
             this.updateTabPage.TabIndex = 2;
             this.updateTabPage.Text = "Updates";
             this.updateTabPage.UseVisualStyleBackColor = true;
             // 
             // donateTabPage
             // 
-            this.donateTabPage.Location = new System.Drawing.Point(4, 24);
+            this.donateTabPage.Location = new System.Drawing.Point(4, 22);
             this.donateTabPage.Name = "donateTabPage";
-            this.donateTabPage.Size = new System.Drawing.Size(493, 368);
+            this.donateTabPage.Size = new System.Drawing.Size(421, 317);
             this.donateTabPage.TabIndex = 3;
             this.donateTabPage.Text = "Donate";
             this.donateTabPage.UseVisualStyleBackColor = true;
             // 
             // SettingsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 396);
+            this.ClientSize = new System.Drawing.Size(429, 343);
             this.Controls.Add(this.tabControl1);
             this.Name = "SettingsForm";
             this.Text = "SettingsForm";
@@ -153,8 +151,6 @@ namespace DropTop
         }
 
         #endregion
-
-        private FolderBrowserDialog folderBrowserDialog;
         private TabControl tabControl1;
         private TabPage generalTabPage;
         private Button removeButton;

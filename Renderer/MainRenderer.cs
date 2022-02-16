@@ -214,19 +214,19 @@ namespace DropTop.Renderer
         }
         private void MouseHook_MouseClickEvent(object sender, MouseEventArgs e)
         {
-            Debug.WriteLine(JsonConvert.SerializeObject(e, Formatting.Indented));
-            if (e.Button == MouseButtons.Left)
-            {
-                if (e.Clicks % 2 == 1)
-                {
-                    var d = new Drop("C:\\Users\\marcu\\Downloads\\Activity2.pdf");
-                    this.AddDrop(d);
-                    this.CreateBox(d, e.X, e.Y);
-                    this.IsMouseDown = true;
-                } else
-                    this.IsMouseDown = false;
+            //Debug.WriteLine(JsonConvert.SerializeObject(e, Formatting.Indented));
+            //if (e.Button == MouseButtons.Left)
+            //{
+            //    if (e.Clicks % 2 == 1)
+            //    {
+            //        var d = new Drop("C:\\Users\\marcu\\Downloads\\Activity2.pdf");
+            //        this.AddDrop(d);
+            //        this.CreateBox(d, e.X, e.Y);
+            //        this.IsMouseDown = true;
+            //    } else
+            //        this.IsMouseDown = false;
 
-            }
+            //}
         }
 
         private void MouseHook_MouseMoveEvent(object sender, MouseEventArgs e)

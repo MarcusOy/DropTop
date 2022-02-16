@@ -1,4 +1,5 @@
 ﻿using DropTop.Services;
+using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,11 +25,13 @@ namespace DropTop
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            var dialog = new CommonOpenFileDialog();
+            dialog.IsFolderPicker = true;
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
                 FoldersToWatch.Add(new FolderToWatch
                 {
-                    Path = folderBrowserDialog.SelectedPath,
+                    Path = dialog.FileName,
                     IsEnabled = true
                 });
                 SettingsService.FoldersToWatch = this.FoldersToWatch.ToList();
